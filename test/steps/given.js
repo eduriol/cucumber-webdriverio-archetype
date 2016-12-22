@@ -1,8 +1,8 @@
-import abrirWebsite from '../support/action/abrirWebsite';
+import openWebsite from '../support/action/openWebsite';
 
 module.exports = function given() {
     this.Given(
-        /^que entramos a la (url|dirección) "([^"]*)?"$/,
-        abrirWebsite
+        /^we enter (url|site) "([^"]*)?"$/,
+        openWebsite
     );
 };

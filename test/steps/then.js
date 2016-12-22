@@ -1,8 +1,8 @@
-import checkSinResultadosBusqueda from '../support/check/checkSinResultadosBusqueda';
+import checkSearchWithoutResult from '../support/check/checkSearchWithoutResult';
 
 module.exports = function then() {
     this.Then(
-        /^se muestra el mensaje de resultados "([^"]*)?"$/,
-        checkSinResultadosBusqueda
+        /^the results message shows "([^"]*)?"$/,
+        checkSearchWithoutResult
     );
 };

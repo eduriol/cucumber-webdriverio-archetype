@@ -1,8 +1,8 @@
-import buscarTermino from '../support/action/buscarTermino';
+import makeSearch from '../support/action/makeSearch';
 
 module.exports = function when() {
     this.When(
-        /^buscamos la palabra "([^"]*)?"$/,
-        buscarTermino
+        /^we search for "([^"]*)?"$/,
+        makeSearch
     );
 };
