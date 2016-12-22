@@ -1,4 +1,3 @@
-# cucumber-webdriverio-archetype
 # Cucumber & WebdriverIO Archetype
 This is an archetype for testing projects using Cucumber and WebdriverIO. It shows several examples that search in Google.
 
