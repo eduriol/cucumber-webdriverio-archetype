@@ -1,8 +1,10 @@
+import { defineSupportCode } from 'cucumber';
+
 import makeSearch from '../support/action/makeSearch';
 
-module.exports = function when() {
-    this.When(
+defineSupportCode(({ When }) => {
+    When(
         /^we search for "([^"]*)?"$/,
         makeSearch
     );
-};
+});

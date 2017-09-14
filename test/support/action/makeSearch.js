@@ -1,5 +1,4 @@
-module.exports = (value, done) => {
+module.exports = (value) => {
     browser.setValue('#lst-ib', value);
     browser.keys('Enter');
-    done();
 };

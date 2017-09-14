@@ -1,8 +1,10 @@
+import { defineSupportCode } from 'cucumber';
+
 import openWebsite from '../support/action/openWebsite';
 
-module.exports = function given() {
-    this.Given(
+defineSupportCode(({ Given }) => {
+    Given(
         /^we enter (url|site) "([^"]*)?"$/,
         openWebsite
     );
-};
+});

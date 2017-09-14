@@ -1,8 +1,10 @@
+import { defineSupportCode } from 'cucumber';
+
 import checkSearchWithoutResult from '../support/check/checkSearchWithoutResult';
 
-module.exports = function then() {
-    this.Then(
+defineSupportCode(({ Then }) => {
+    Then(
         /^the results message shows "([^"]*)?"$/,
         checkSearchWithoutResult
     );
-};
+});

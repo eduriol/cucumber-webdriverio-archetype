@@ -1,5 +1,4 @@
-module.exports = (type, page, done) => {
+module.exports = (type, page) => {
     const url = (type === 'url') ? page : browser.options.baseUrl + page;
     browser.url(url);
-    done();
 };
